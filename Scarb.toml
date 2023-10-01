@@ -18,4 +18,3 @@ members = [
     "crates/layer3",
     "crates/layer4",
 ]
-alexandria_math = { path = "../math" }
