@@ -1,0 +1,8 @@
+[package]
+name = "layer2"
+version = "0.1.0"
+
+# See more keys and their definitions at https://docs.swmansion.com/scarb/docs/reference/manifest.html
+
+[dependencies]
+orion = { git = "https://github.com/gizatechxyz/orion.git", rev = "v0.1.1" }
