@@ -1,0 +1,21 @@
+[package]
+name = "tic_tac_toe"
+version = "0.1.0"
+
+[dependencies]
+orion = { git = "https://github.com/gizatechxyz/orion.git", rev = "v0.1.1" }
+layer0 = {path = "crates/layer0"}
+layer1 = {path = "crates/layer1"}
+layer2 = {path = "crates/layer2"}
+layer3 = {path = "crates/layer3"}
+layer4 = {path = "crates/layer4"}
+
+[workspace]
+members = [
+    "crates/layer0",
+    "crates/layer1",
+    "crates/layer2",
+    "crates/layer3",
+    "crates/layer4",
+]
+alexandria_math = { path = "../math" }

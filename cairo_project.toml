@@ -1,0 +1,2 @@
+[crate_roots]
+tic_tac_toe = "src"
