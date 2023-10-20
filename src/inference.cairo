@@ -29,6 +29,5 @@ fn test_ttt() {
     x = dense_relu(x, w2(), b2());
     x = dense_relu(x, w3(), b3());
     x = dense_softmax(x, w4(), b4());
-
 }
 

@@ -7,6 +7,6 @@ use orion::numbers::{FixedTrait, FP16x16};
 fn dense_4_bias() -> Tensor<FP16x16> {
     let mut shape = array![3,].span();
     let mut data = array![
-FP16x16 { mag: 35365, sign: true },FP16x16 { mag: 15187, sign: false },FP16x16 { mag: 78, sign: true },].span();
-    Tensor {shape: shape, data: data}
+FP16x16 { mag: 34829, sign: true },FP16x16 { mag: 17676, sign: false },FP16x16 { mag: 6040, sign: true },].span();
+    TensorTrait::new(shape, data)
 }
