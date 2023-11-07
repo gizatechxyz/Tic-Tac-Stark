@@ -30,4 +30,4 @@ This project presents a Cairo implementation of a pre-trained Tic Tac Toe model.
     ```
 
 ## Acknowledge
-To train and build the model we based on this [great notebook](https://www.kaggle.com/code/dhanushkishore/a-self-learning-tic-tac-toe-program/notebook).
+To train and build the model we relied on this [great notebook](https://www.kaggle.com/code/dhanushkishore/a-self-learning-tic-tac-toe-program/notebook).
