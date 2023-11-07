@@ -1,3 +1,4 @@
+use core::array::SpanTrait;
 use orion::operators::tensor::{TensorTrait, FP16x16Tensor, Tensor, FP16x16TensorAdd};
 use orion::operators::nn::{NNTrait, FP16x16NN};
 use orion::numbers::{FP16x16, FixedTrait};
@@ -9,6 +10,7 @@ use sequential_1_dense_2_biasadd_readvariableop_0::tensor as _sequential_1_dense
 use sequential_1_dense_3_matmul_readvariableop_0::tensor as _sequential_1_dense_3_matmul_readvariableop_0;
 use sequential_1_dense_3_biasadd_readvariableop_0::tensor as _sequential_1_dense_3_biasadd_readvariableop_0;
 
+use debug::PrintTrait;
 
 #[test]
 #[available_gas(2000000000000)]
@@ -33,4 +35,6 @@ fn _main() {
     x = TensorTrait::matmul(@x, @_sequential_1_dense_3_matmul_readvariableop_0());
     x = x + _sequential_1_dense_3_biasadd_readvariableop_0();
     x = NNTrait::relu(@x);
+
+    (*x.data.at(0)).print();
 }
