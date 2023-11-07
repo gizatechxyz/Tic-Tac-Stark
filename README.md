@@ -1,4 +1,4 @@
-# Provable AI Agents in Autonomous Worlds: Tic Tac Toe Example
+# Provable AI Agents in Autonomous Worlds: Tic-Tac-Toe Example
 
 Welcome to our experimental project, where we delve into the fascinating intersection of ZKML and Autonomous Worlds through the classic game of Tic Tac Toe.
 
