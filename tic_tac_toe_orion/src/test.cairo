@@ -37,7 +37,6 @@ mod tests {
         // DENSE 3
         x = TensorTrait::matmul(@x, @_sequential_1_dense_3_matmul_readvariableop_0());
         x = x + _sequential_1_dense_3_biasadd_readvariableop_0();
-        x = NNTrait::relu(@x);
 
         (*x.data.at(0)).print();
     }

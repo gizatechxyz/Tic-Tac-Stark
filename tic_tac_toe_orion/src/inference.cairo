@@ -19,8 +19,7 @@ mod OrionRunner {
 
     #[external(v0)]
     fn predict(self: @ContractState, mut x: Tensor<FP16x16>) -> FP16x16 {
-        let two = FixedTrait::<FP16x16>::new_unscaled(2, false);
-
+        // let two = FixedTrait::<FP16x16>::new_unscaled(2, false);
         // let mut x = Tensor {
         //     shape: array![9].span(),
         //     data: array![two, two, two, two, two, two, two, two, two].span()
@@ -39,7 +38,6 @@ mod OrionRunner {
         // DENSE 3
         x = TensorTrait::matmul(@x, @t5());
         x = x + t6();
-        x = NNTrait::relu(@x);
 
         return *x.data.at(0);
     }
